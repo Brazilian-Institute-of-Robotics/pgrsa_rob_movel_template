@@ -1,11 +1,13 @@
 # Atenção às instruções abaixo.
 
-**Há duas formas de criar o workspace ROS2 de forma automática usando o script ou de forma manual diretamente no terminal.**
-
 Prezados(as) alunos(as),
 
-este repositório é um template para a disciplina de Robótica Móvel e Autônoma. Você deve fazer um fork deste repositório no seu GitHub e desenvolver as atividades a partir do seu fork. Ao final da tarefa, envie o link do seu fork para avaliação.
+este repositório é um **template** para a disciplina de **Robótica Móvel e Autônoma**. Você deve fazer um **fork** deste repositório no seu GitHub e desenvolver as atividades a partir deste fork. Ao final da tarefa, envie o link do seu **fork** para avaliação.
 
+**Há duas formas de criar o workspace ROS2:**
+ - **Automática usando o script**
+ - **Manual diretamente no terminal.**
+---
 --- 
 # Setup ROS 2 Humble + Gazebo + Nav2 (script) Automático
 
