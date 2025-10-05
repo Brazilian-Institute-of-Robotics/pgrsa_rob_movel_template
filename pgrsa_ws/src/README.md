@@ -8,7 +8,11 @@ A entrega consiste em **1 vídeo** (ambos os robôs no mesmo vídeo) **ou 2 víd
 
 ---
 **Lista de Aluno(s)**
+
 Nome dos aluno(s):
+- nome1
+- nome2
+- ...
 
 ---
 
