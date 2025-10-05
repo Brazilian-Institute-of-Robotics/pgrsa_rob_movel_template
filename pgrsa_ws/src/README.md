@@ -1,8 +1,18 @@
-# README — Entrega do Vídeo de Navegação (Nav2 em mapa conhecido)
+# Entrega do Vídeo de Navegação (Nav2 em mapa conhecido)
 
 **Objetivo**  
 Realizar a navegação segura em um ambiente já mapeado, ajustando os parâmetros de controladores e planejadores do Nav2 conforme o tipo de robô.  
 A entrega consiste em **1 vídeo** (ambos os robôs no mesmo vídeo) **ou 2 vídeos** (um para cada robô) publicados no YouTube **e com os links colados neste README**.
+
+---
+
+---
+**Lista de Aluno(s)**
+
+Nome dos aluno(s):
+- nome1
+- nome2
+- ...
 
 ---
 
