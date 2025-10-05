@@ -18,7 +18,7 @@ def generate_launch_description():
     pgrsa_scout_pkg_share = get_package_share_directory('pgrsa_scout')
 
     nav2_params = os.path.join(pgrsa_scout_pkg_share, 'config', 'scout_nav2_params.yaml')
-    map_yaml    = os.path.join(gz_pkg_share, 'map', 'powerstation_raster.yaml')
+    map_yaml    = os.path.join(gz_pkg_share, 'map', 'powerstation.yaml')
     
     # 1) Display (RViz + RSP/JSP)
     display = IncludeLaunchDescription(

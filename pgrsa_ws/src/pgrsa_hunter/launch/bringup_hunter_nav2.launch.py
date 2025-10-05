@@ -18,11 +18,16 @@ def generate_launch_description():
     pgrsa_hunter_pkg_share = get_package_share_directory('pgrsa_hunter')
 
     nav2_params = os.path.join(pgrsa_hunter_pkg_share, 'config', 'hunter_nav2_params.yaml')
-    map_yaml    = os.path.join(gz_pkg_share, 'map', 'powerstation_raster.yaml')
+    map_yaml    = os.path.join(gz_pkg_share, 'map', 'powerstation.yaml')
     
 
 
-    # 2) ros_gz_bridge (clock, odom, cmd_vel, sensores…)
+    display = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(gz_pkg_share, 'launch', 'display.launch.py')
+        ),
+        launch_arguments={'gui': 'true'}.items()
+    )
 
 
     # 3) Map Server (fornece /map do arquivo salvo)
@@ -78,9 +83,10 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        display,
         declare_log,
         map_server,
         amcl,
-        lifecycle,
         nav2,
+        lifecycle,
     ])

@@ -95,7 +95,10 @@ set -e
 # --------------------------------------------------------------------
 DEBIAN_FRONTEND=noninteractive $SUDO apt-get install -y \
   "ros-${ROS_DISTRO}-navigation2" \
-  "ros-${ROS_DISTRO}-nav2-bringup"
+  "ros-${ROS_DISTRO}-nav2-bringup" \
+  "ros-${ROS_DISTRO}-nav2-rviz-plugins" \
+  "ros-${ROS_DISTRO}-nav2-waypoint-follower" \
+  "ros-${ROS_DISTRO}-slam-toolbox"
 
 # --------------------------------------------------------------------
 # 7) Criar workspace + clonar AgileX (somente branch 'humble')
@@ -105,7 +108,7 @@ mkdir -p "${WS_PATH}/src"
 AGILEX_DIR="${WS_PATH}/src/ugv_gazebo_sim"
 # Garante que a branch humble exista no remoto; se não existir, falha
 if ! git ls-remote --heads https://github.com/Brazilian-Institute-of-Robotics/ugv_gazebo_sim.git humble | grep -q 'refs/heads/humble'; then
-  echo "ERRO: a branch 'humble' não existe em agilexrobotics/ugv_gazebo_sim." >&2
+  echo "ERRO: a branch 'humble' não existe em Brazilian-Institute-of-Robotics/ugv_gazebo_sim." >&2
   exit 1
 fi
 
