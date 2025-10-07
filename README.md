@@ -23,7 +23,8 @@ este repositório é um **template** para a disciplina de **Robótica Móvel e A
 - (Opcional) habilita repositório **OSRF** e instala **Ignition Fortress**;
 - Instala **ros-gz** (integração Gazebo ↔ ROS);
 - Instala **Navigation2**;
-- Cria um **workspace** ao lado do script (padrão: `pgrsa_ws`) e clona `ugv_gazebo_sim` (branch `humble`).
+- Clona `ugv_gazebo_sim` (branch `humble`).
+- Clona o repositório `PGRSA_ROB_MOVEL_TEMPLATE`
 
 ---
 

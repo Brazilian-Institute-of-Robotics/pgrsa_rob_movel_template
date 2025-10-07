@@ -103,7 +103,6 @@ DEBIAN_FRONTEND=noninteractive $SUDO apt-get install -y \
 # --------------------------------------------------------------------
 # 7) Criar workspace + clonar AgileX (somente branch 'humble')
 # --------------------------------------------------------------------
-mkdir -p "${WS_PATH}/src"
 
 AGILEX_DIR="${WS_PATH}/src/ugv_gazebo_sim"
 # Garante que a branch humble exista no remoto; se não existir, falha
