@@ -29,6 +29,11 @@ def generate_launch_description():
         launch_arguments={'gui': 'true'}.items()
     )
 
+    bridge = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(gz_pkg_share, 'launch', 'gz_bridge.launch.py')
+        )
+    )
 
     # 3) Map Server (fornece /map do arquivo salvo)
     map_server = Node(
@@ -85,6 +90,7 @@ def generate_launch_description():
     return LaunchDescription([
         display,
         declare_log,
+        bridge,
         map_server,
         amcl,
         nav2,

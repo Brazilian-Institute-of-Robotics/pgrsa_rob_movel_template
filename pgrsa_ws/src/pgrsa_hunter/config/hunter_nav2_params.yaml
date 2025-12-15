@@ -210,16 +210,16 @@ local_costmap:
 global_costmap:
   global_costmap:
     ros__parameters:
-      update_frequency: 1.0
+      update_frequency: 2.0
       publish_frequency: 1.0
       global_frame: map
       robot_base_frame: base_footprint
       footprint: "[[0.49, 0.3725], [0.49, -0.3725], [-0.49, -0.3725], [-0.49, 0.3725]]"
       use_sim_time: True
       robot_radius: 0.22
-      resolution: 0.05
+      resolution: 0.1
       track_unknown_space: true
-      rolling_window: true
+      rolling_window: false
       track_unknown_space: true
       width: 200        # seu mundo ~150x150 m -> deixe folga
       height: 200
@@ -266,7 +266,7 @@ map_saver:
 
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 20.0
+    expected_planner_frequency: 10.0
     use_sim_time: True
     planner_plugins: ["GridBased"]
     GridBased:
