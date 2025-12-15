@@ -9,7 +9,9 @@ log/
 **/log/
 .colcon/
 .colcon/**
-
+ugv_nav4d_ros2/
+lidarslam_ros2/
+pgrsa_4d_nav/
 # Evitar subida de rosbag2 gravadas durante testes
 rosbag2_*/
 **/rosbag2_*/
