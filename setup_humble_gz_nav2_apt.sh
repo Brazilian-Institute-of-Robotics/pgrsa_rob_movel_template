@@ -101,27 +101,6 @@ DEBIAN_FRONTEND=noninteractive $SUDO apt-get install -y \
   "ros-${ROS_DISTRO}-slam-toolbox"
 
 # --------------------------------------------------------------------
-# 7) Criar workspace + clonar AgileX (somente branch 'humble')
-# --------------------------------------------------------------------
-
-AGILEX_DIR="${WS_PATH}/src/ugv_gazebo_sim"
-# Garante que a branch humble exista no remoto; se não existir, falha
-if ! git ls-remote --heads https://github.com/Brazilian-Institute-of-Robotics/ugv_gazebo_sim.git humble | grep -q 'refs/heads/humble'; then
-  echo "ERRO: a branch 'humble' não existe em Brazilian-Institute-of-Robotics/ugv_gazebo_sim." >&2
-  exit 1
-fi
-
-if [[ -d "${AGILEX_DIR}/.git" ]]; then
-  echo "==> ugv_gazebo_sim já existe; fixando em 'humble'..."
-  git -C "${AGILEX_DIR}" fetch origin humble --prune
-  git -C "${AGILEX_DIR}" checkout -B humble origin/humble
-else
-  echo "==> Clonando ugv_gazebo_sim (branch humble)..."
-  git clone --branch humble --single-branch --depth 1 \
-    https://github.com/Brazilian-Institute-of-Robotics/ugv_gazebo_sim.git "${AGILEX_DIR}"
-fi
-
-# --------------------------------------------------------------------
 # 8) rosdep + build do workspace (apenas o que está no src)
 # --------------------------------------------------------------------
 if ! command -v rosdep >/dev/null 2>&1; then
