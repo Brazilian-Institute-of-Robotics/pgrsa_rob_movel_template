@@ -101,7 +101,7 @@ DEBIAN_FRONTEND=noninteractive $SUDO apt-get install -y \
   "ros-${ROS_DISTRO}-slam-toolbox"
 
 # --------------------------------------------------------------------
-# 8) rosdep + build do workspace (apenas o que está no src)
+# 7) rosdep + build do workspace (apenas o que está no src)
 # --------------------------------------------------------------------
 if ! command -v rosdep >/dev/null 2>&1; then
   echo "!! rosdep não encontrado — algo falhou na instalação do ROS 2."

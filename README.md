@@ -58,6 +58,11 @@ Exemplos:
 > O script exibirá o **caminho absoluto** do workspace ao final (ex.: `/caminho/para/pgrsa_ws`).
 
 ---
+## Dentro da raíz execute o comando para inicializar o submodulo:
+
+```
+git submodule update --init --recursive
+```
 
 ## 🧭 Após rodar o script (em **um novo terminal**)
 
@@ -128,6 +133,8 @@ source /opt/ros/humble/setup.bash
 pgrsa_ws/
 ├─ src/
 │  └─ ugv_gazebo_sim/   (branch humble)
+│  └─ pgrsa_hunter/   
+│  └─ pgrsa_scout/   
 ├─ build/               (gerado)
 ├─ install/             (gerado)
 └─ log/                 (gerado)
@@ -207,19 +214,10 @@ sudo apt-get install -y ros-humble-navigation2 ros-humble-nav2-bringup
 
 ---
 
-## 6) Criar o workspace manualmente
+## 6)Dentro da raíz execute o comando para inicializar o submodulo:
 
-> Exemplo: criar `~/pgrsa_ws` (troque pelo caminho que preferir).
-
-```bash
-mkdir -p ~/pgrsa_ws/src
-cd ~/pgrsa_ws
 ```
-
-Clonar um repositório necessário (ex.: `ugv_gazebo_sim`, branch `humble`):
-
-```bash
-git clone --branch humble --single-branch --depth 1   https://github.com/Brazilian-Institute-of-Robotics/ugv_gazebo_sim.git   src/ugv_gazebo_sim
+git submodule update --init --recursive
 ```
 
 Instalar dependências do workspace:
