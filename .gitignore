@@ -9,7 +9,6 @@ log/
 **/log/
 .colcon/
 .colcon/**
-ugv_gazebo_sim/
 
 # Evitar subida de rosbag2 gravadas durante testes
 rosbag2_*/
