@@ -134,7 +134,8 @@ pgrsa_ws/
 ├─ src/
 │  └─ ugv_gazebo_sim/   (branch humble)
 │  └─ pgrsa_hunter/   
-│  └─ pgrsa_scout/   
+│  └─ pgrsa_scout/
+|  └─ pgrsa_2d_slam/    
 ├─ build/               (gerado)
 ├─ install/             (gerado)
 └─ log/                 (gerado)
