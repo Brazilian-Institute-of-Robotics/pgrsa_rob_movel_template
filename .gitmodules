@@ -1,0 +1,4 @@
+[submodule "pgrsa_ws/src/ugv_gazebo_sim"]
+	path = pgrsa_ws/src/ugv_gazebo_sim
+	url = https://github.com/Brazilian-Institute-of-Robotics/ugv_gazebo_sim.git
+	branch = humble

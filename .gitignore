@@ -1,0 +1,71 @@
+# =========================
+# ROS 2 / Colcon (qualquer nível)
+# =========================
+build/
+install/
+log/
+**/build/
+**/install/
+**/log/
+.colcon/
+.colcon/**
+ugv_nav4d_ros2/
+lidarslam_ros2/
+pgrsa_4d_nav/
+# Evitar subida de rosbag2 gravadas durante testes
+rosbag2_*/
+**/rosbag2_*/
+*.db3
+
+# =========================
+# Python (pacotes ament_python)
+# =========================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Artefatos de build/empacotamento Python
+*.egg-info/
+**/*.egg-info/
+.eggs/
+dist/
+pip-wheel-metadata/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+.env
+.python-version
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Linters / Tipagem
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# =========================
+# IDEs / Sistema Operacional
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# =========================
+# Arquivos temporários comuns
+# =========================
+*.swp
+*.swo
+*~

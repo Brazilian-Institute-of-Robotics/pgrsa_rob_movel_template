@@ -1,0 +1,119 @@
+# RTAB-Map + ICP Odometry parameters (ROS 2 Humble)
+# IMPORTANT ABOUT TYPES:
+# - ROS2 parameters are strongly typed.
+# - RTAB-Map "internal" parameters with a slash (e.g., Icp/..., Grid/..., RGBD/..., Reg/..., Mem/..., Odom/..., OdomF2M/...)
+#   are declared by rtabmap_ros as STRING parameters, then parsed internally by RTAB-Map.
+#   So keep them as strings here ("0.05", "true", "false"...), otherwise nodes will crash with InvalidParameterTypeException.
+
+icp_odometry:
+  ros__parameters:
+    # -------- ROS (typed) --------
+    use_sim_time: true
+    frame_id: base_link
+    odom_frame_id: icp_odom
+    publish_tf: false
+    subscribe_imu: true
+    expected_update_rate: 20.0
+    wait_for_transform: 0.2
+    approx_sync: true
+    topic_queue_size: 30
+    sync_queue_size: 30
+    # Pose inicial (rtabmap_ros aceita string)
+    initial_pose: "0 7 0.84 0 0 0"
+    # Use TF odom->base_link como chute (se existir)
+    guess_frame_id: odom
+
+    # -------- RTAB-Map internal (MUST be strings) --------
+    # ICP (robustez)
+    Icp/PointToPlane: "true"
+    Icp/Iterations: "30"
+    Icp/VoxelSize: "0.05"
+    Icp/Epsilon: "0.0001"
+    Icp/PointToPlaneK: "30"
+    Icp/MaxCorrespondenceDistance: "1.2"
+    Icp/Strategy: "1"
+    Icp/OutlierRatio: "0.80"
+    Icp/CorrespondenceRatio: "0.05"
+
+    # Limita “escorregada” (ajuste conforme seu Hz de LiDAR ~6-7 Hz)
+    Icp/MaxTranslation: "1.0"
+    Icp/MaxRotation: "0.6"
+
+    # Corta range
+    Icp/RangeMin: "0.3"
+    Icp/RangeMax: "6.0"
+
+    # Odometria F2M (estabilidade)
+    Odom/ScanKeyFrameThr: "0.6"
+    OdomF2M/ScanSubtractRadius: "0.05"
+    OdomF2M/ScanMaxSize: "25000"
+    OdomF2M/BundleAdjustment: "false"
+    OdomF2M/ValidDepthRatio: "0.0"
+    Icp/PointToPlaneMinComplexity: "0.005"
+
+
+rtabmap:
+  ros__parameters:
+    # -------- ROS (typed) --------
+    use_sim_time: true
+    frame_id: base_link
+    map_frame_id: map
+    publish_tf: true
+    publish_pointcloud: true
+    subscribe_rgb: true
+    subscribe_depth: true
+    subscribe_rgbd: false
+    subscribe_scan_cloud: true
+    subscribe_odom_info: true
+    subscribe_imu: true
+    imu_topic: /imu
+
+    # Sync/queues (ROS params typed)
+    approx_sync: true
+    wait_for_transform: 0.2
+    topic_queue_size: 30
+    sync_queue_size: 30
+    odom_sensor_sync: false
+
+    # Pose inicial (string)
+    initial_pose: "0 7 0.84 0 0 0"
+
+    # -------- RTAB-Map internal (MUST be strings) --------
+    # SLAM / registro
+    Reg/Force3DoF: "false"
+    RGBD/AngularUpdate: "0.1"
+    RGBD/LinearUpdate: "0.1"
+
+    # loop closure mais robusto em corredor
+    RGBD/ProximityBySpace: "true"
+    RGBD/ProximityMaxGraphDepth: "0"
+    RGBD/ProximityPathMaxNeighbors: "1"
+
+    Mem/STMSize: "20"
+    Mem/NotLinkedNodesKept: "false"
+    Reg/Strategy: "1"
+    Mem/IncrementalMemory: "true"
+
+    # Grid / ocupação
+    RGBD/CreateOccupancyGrid: "true"
+
+    Grid/FromScanCloud: "true"
+    Grid/FromScan: "false"
+    Grid/FromDepth: "false"
+
+    Grid/VoxelSize: "0.07"
+    Grid/GroundIsObstacle: "false"
+    Grid/GroundHeight: "0.08"
+    Grid/MaxGroundHeight: "0.35"
+    Grid/NormalK: "30"
+    Grid/MaxAngle: "30"
+
+    Grid/MinObstacleHeight: "0.22"
+    Grid/MaxObstacleHeight: "2.0"
+    Grid/NoiseFilteringRadius: "0.15"
+    Grid/NoiseFilteringMinNeighbors: "4"
+
+    Grid/FootprintRadius: "0.35"
+    Grid/UpdateError: "0.01"
+    Grid/UpdateOccupancy: "0.02"
+    Grid/Project2D: "true"

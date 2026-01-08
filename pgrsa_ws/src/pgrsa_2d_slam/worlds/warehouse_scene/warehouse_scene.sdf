@@ -1,0 +1,1179 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="test">
+    <static>true</static>
+    <link name="testlink">
+      <visual name="MainSupportBeam_Walkway_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>MainSupportBeam_Walkway_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="cable_Rubber_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>cable_Rubber_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_3</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="WarehouseWalls_factory_wall_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>WarehouseWalls_factory_wall_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_6</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Roof_Walkway_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Roof_Walkway_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Roof_rusty metal plate corrugated_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Roof_rusty metal plate corrugated_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_9</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="SideSupportBeam_Walkway_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>SideSupportBeam_Walkway_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Floor_WarehouseMainConcrete_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Floor_WarehouseMainConcrete_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_12</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Windows_WarehouseWindow_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Windows_WarehouseWindow_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_15</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Windows_WarehouseWindow_0.001">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Windows_WarehouseWindow_0.001</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_15</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Office_Office_Floor_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Office_Office_Floor_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_17</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Office_MetalRusted_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Office_MetalRusted_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_20</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Office_factory_wall_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Office_factory_wall_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_6</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Walkway.001_MetalRusted_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Walkway.001_MetalRusted_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_20</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Walkway.001_MetalWalkway_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Walkway.001_MetalWalkway_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_23</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="WarehouseBase_WarehouseMainConcrete_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>WarehouseBase_WarehouseMainConcrete_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_12</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="SmallGateVar3_GateRail_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>SmallGateVar3_GateRail_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_26</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="SmallGateVar3_Rubber_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>SmallGateVar3_Rubber_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_3</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="SmallGateVar2_GateRail_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>SmallGateVar2_GateRail_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_26</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="SmallGateVar2_Rubber_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>SmallGateVar2_Rubber_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_3</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="SmallGateVar1_GateRail_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>SmallGateVar1_GateRail_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_26</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="SmallGateVar1_Rubber_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>SmallGateVar1_Rubber_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_3</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="MainGate.001_GateRail_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>MainGate.001_GateRail_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_26</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="MainGate.001_Rubber_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>MainGate.001_Rubber_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_3</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.004_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.004_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.003_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.003_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.002_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.002_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.001_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.001_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.005_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.005_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.006_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.006_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.007_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.007_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.008_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.008_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.009_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.009_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.010_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.010_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Railings_MetalRusted_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Railings_MetalRusted_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_20</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="ConcreteSteps_WarehouseMainConcrete_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>ConcreteSteps_WarehouseMainConcrete_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_12</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.011_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.011_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Door2.012_DoorMetal_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Door2.012_DoorMetal_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_28</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="OfficeDoor_OfficeDoorMaterial_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>OfficeDoor_OfficeDoorMaterial_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_30</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="OfficeWindows_OfficeWindow_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>OfficeWindows_OfficeWindow_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_33</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="OfficeDoor.001_OfficeDoorMaterial_0">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>OfficeDoor.001_OfficeDoorMaterial_0</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_30</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_1_Crate_0.001">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_1_Crate_0.001</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_inside_Plastic Wrap_0.001">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_inside_Plastic Wrap_0.001</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_2.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Plastic Wrap_0.001">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Plastic Wrap_0.001</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Crate_0.001">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Crate_0.001</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_1_Crate_0.002">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_1_Crate_0.002</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_inside_Plastic Wrap_0.002">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_inside_Plastic Wrap_0.002</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_2.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Plastic Wrap_0.002">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Plastic Wrap_0.002</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Crate_0.002">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Crate_0.002</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_1_Crate_0.004">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_1_Crate_0.004</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_inside_Plastic Wrap_0.004">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_inside_Plastic Wrap_0.004</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_2.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Plastic Wrap_0.004">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Plastic Wrap_0.004</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Crate_0.004">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Crate_0.004</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_1_Crate_0.005">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_1_Crate_0.005</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_inside_Plastic Wrap_0.005">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_inside_Plastic Wrap_0.005</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_2.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Plastic Wrap_0.005">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Plastic Wrap_0.005</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Crate_0.005">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Crate_0.005</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_1_Crate_0.006">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_1_Crate_0.006</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_inside_Plastic Wrap_0.006">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_inside_Plastic Wrap_0.006</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_2.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Plastic Wrap_0.006">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Plastic Wrap_0.006</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <visual name="Crate_lid_Crate_0.006">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+            <submesh>
+              <name>Crate_lid_Crate_0.006</name>
+            </submesh>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0 1.0</diffuse>
+          <specular>0.15 0.15 0.15 1.0</specular>
+          <pbr>
+            <metal>
+              <albedo_map>meshes/Image_0.001</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/warehouse.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <collide_bitmask>0x01</collide_bitmask>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+  </model>
+</sdf>
