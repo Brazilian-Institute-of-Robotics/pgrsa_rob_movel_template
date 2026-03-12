@@ -1,8 +1,8 @@
 # Atenção às instruções abaixo.
 
-Prezados(as) alunos(as),
+Olá, estudante!
 
-este repositório é um **template** para a disciplina de **Robótica Móvel e Autônoma**. Você deve fazer um **fork** deste repositório no seu GitHub e desenvolver as atividades a partir deste fork. Ao final da tarefa, envie o link do seu **fork** para avaliação.
+Este repositório é um **template** para o desenvolvimento da atividade do Roteiro hands on 1 e 2 e Roteiro hands on 3 e 4 da Unidade Curricular **Robótica Móvel e Autônoma**. 
 
 **Há duas formas de criar o workspace ROS2:**
  - **Automática usando o script**
@@ -16,7 +16,7 @@ este repositório é um **template** para a disciplina de **Robótica Móvel e A
 
 ---
 
-## 📦 O que o script faz
+## 📦 O que o script realiza:
 
 - Configura o repositório oficial do ROS 2 (`ros-apt-source`);
 - Instala **ROS 2 Humble (desktop)**, `colcon`, `rosdep`, `vcstool` e ferramentas;
@@ -35,7 +35,7 @@ este repositório é um **template** para a disciplina de **Robótica Móvel e A
 
 ---
 
-## ▶️ Executar o script
+## ▶️ Execute o script
 
 ```bash
 chmod +x ./setup_humble_gz_nav2_apt.sh
@@ -58,13 +58,13 @@ Exemplos:
 > O script exibirá o **caminho absoluto** do workspace ao final (ex.: `/caminho/para/pgrsa_ws`).
 
 ---
-## Dentro da raíz execute o comando para inicializar o submodulo:
+## Na raíz do diretório execute o comando para inicializar o submódulo:
 
 ```
 git submodule update --init --recursive
 ```
 
-## 🧭 Após rodar o script (em **um novo terminal**)
+## 🧭 Após executar o script em **um novo terminal** utilize os comandos a seguir:
 
 1. **Ir para o workspace** (use o caminho mostrado pelo script):
    ```bash
@@ -86,7 +86,7 @@ git submodule update --init --recursive
    source install/setup.bash
    ```
 
-*(Opcional) Persistir no `~/.bashrc`:*
+*(Opcional) Gravar no `~/.bashrc`:*
 ```bash
 echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 echo 'source /caminho/para/pgrsa_ws/install/setup.bash' >> ~/.bashrc
@@ -94,7 +94,7 @@ echo 'source /caminho/para/pgrsa_ws/install/setup.bash' >> ~/.bashrc
 
 ---
 
-## 🔎 Testes rápidos
+## 🔎 Testes rápidos para verificar a instalação (opcional)
 
 ```bash
 ros2 doctor
@@ -160,10 +160,10 @@ sudo add-apt-repository -y universe
 
 ---
 
-## 2) Adicionar a fonte APT oficial do ROS 2
+## 2) Adicione a fonte APT oficial do ROS 2
 
 ```bash
-# Obter a última versão do ros-apt-source e instalar
+# Obtenha a última versão do ros-apt-source e instale
 ver="$(curl -s https://api.github.com/repos/ros-infrastructure/ros-apt-source/releases/latest        | grep -F tag_name | awk -F\" '{print $4}')"
 curl -L -o /tmp/ros2-apt-source.deb   "https://github.com/ros-infrastructure/ros-apt-source/releases/download/${ver}/ros2-apt-source_${ver}.jammy_all.deb"
 sudo dpkg -i /tmp/ros2-apt-source.deb
@@ -174,13 +174,13 @@ sudo apt-get -y upgrade
 
 ---
 
-## 3) Instalar ROS 2 Humble (desktop) + ferramentas
+## 3) Instale o ROS 2 Humble (desktop) + ferramentas
 
 ```bash
 sudo apt-get install -y   ros-humble-desktop   python3-colcon-common-extensions   python3-rosdep   python3-vcstool   ros-dev-tools
 ```
 
-Inicializar o **rosdep** (uma vez por máquina):
+Inicialize o **rosdep** (uma vez por máquina):
 
 ```bash
 sudo rosdep init || true
@@ -189,7 +189,7 @@ rosdep update
 
 ---
 
-## 4) (Opcional) Instalar Gazebo (Ignition Fortress) + ros-gz
+## 4) (Opcional) Instale Gazebo (Ignition Fortress) + ros-gz
 
 ```bash
 # Repositório OSRF (opcional) para Fortress
@@ -207,7 +207,7 @@ sudo apt-get install -y ros-humble-ros-gz ||   sudo apt-get install -y $(apt-cac
 
 ---
 
-## 5) Instalar Navigation2
+## 5) Instale Navigation2
 
 ```bash
 sudo apt-get install -y ros-humble-navigation2 ros-humble-nav2-bringup
@@ -215,13 +215,13 @@ sudo apt-get install -y ros-humble-navigation2 ros-humble-nav2-bringup
 
 ---
 
-## 6)Dentro da raíz execute o comando para inicializar o submodulo:
+## 6)Na raiz do diretório execute o comando para inicializar o submódulo:
 
 ```
 git submodule update --init --recursive
 ```
 
-Instalar dependências do workspace:
+Instale as dependências do workspace:
 
 ```bash
 rosdep install --from-paths src --ignore-src -r -y
@@ -231,7 +231,7 @@ rosdep install --from-paths src --ignore-src -r -y
 
 ## 7) Build e configuração do ambiente
 
-Abra um **novo terminal** e rode:
+Abra um **novo terminal** e execute:
 
 ```bash
 source /opt/ros/humble/setup.bash
@@ -240,7 +240,7 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-*(Opcional) Persistir no `~/.bashrc`:*
+*(Opcional) Gravar no `~/.bashrc`:*
 
 ```bash
 echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
