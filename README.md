@@ -236,7 +236,7 @@ Abra um **novo terminal** e execute:
 ```bash
 source /opt/ros/humble/setup.bash
 cd ~/pgrsa_ws
-colcon build --symlink-install
+colcon build
 source install/setup.bash
 ```
 
