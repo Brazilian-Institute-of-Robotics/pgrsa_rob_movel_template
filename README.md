@@ -78,7 +78,7 @@ git submodule update --init --recursive
 
 3. **Construir com colcon**:
    ```bash
-   colcon build --symlink-install
+   colcon build
    ```
 
 4. **Carregar o overlay do workspace**:
