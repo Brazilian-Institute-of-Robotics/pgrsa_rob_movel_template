@@ -100,6 +100,7 @@ DEBIAN_FRONTEND=noninteractive $SUDO apt-get install -y \
   "ros-${ROS_DISTRO}-nav2-waypoint-follower" \
   "ros-${ROS_DISTRO}-rtabmap*" \
   "ros-${ROS_DISTRO}-gz-ros2-control" \
+  "ros-${ROS_DISTRO}-rqt-robot-steering" \
   "ros-${ROS_DISTRO}-slam-toolbox"
 
 # --------------------------------------------------------------------
